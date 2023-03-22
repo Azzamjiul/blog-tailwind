@@ -63,7 +63,7 @@
           class="block w-full rounded-3xl pl-11 pr-2 py-2 focus:outline-none bg-gray-200 text-sm text-gray-600 shadow-sm shadow-slate-300">
       </div>
 
-      <div class="ml-5">
+      <div class="ml-auto lg:ml-5">
         <a href="#" class="flex items-center font-semibold text-md text-gray-900 hover:text-blue-700 transition">
           <span class="mr-2">
             <i class="far fa-user"></i>
@@ -72,7 +72,8 @@
         </a>
       </div>
 
-      <div class="text-xl text-gray-700 cursor-pointer ml-4 lg:hidden block hover:text-blue-700 transition" id="open_sidebar">
+      <div class="text-xl text-gray-700 cursor-pointer ml-4 lg:hidden block hover:text-blue-700 transition"
+        id="open_sidebar">
         <i class="fas fa-bars"></i>
       </div>
     </div>
@@ -455,23 +456,28 @@
           <h3 class="text-xl font-semibold text-gray-700 font-roboto">Social Plugin</h3>
 
           <div class="flex gap-2 mt-2">
-            <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
               <i class="fab fa-facebook"></i>
             </a>
 
-            <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
               <i class="fab fa-instagram"></i>
             </a>
 
-            <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
               <i class="fab fa-twitter"></i>
             </a>
 
-            <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
               <i class="fab fa-pinterest"></i>
             </a>
 
-            <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
               <i class="fab fa-linkedin"></i>
             </a>
           </div>
@@ -545,10 +551,14 @@
           <h3 class="text-xl font-semibold text-gray-700 font-roboto">Tags</h3>
 
           <div class="flex items-center flex-wrap gap-2 mt-4">
-            <a href="#" class="px-3 py-1 border border-gray-400 text-sm rounded-sm transition hover:bg-blue-500 hover:text-white">Economy</a>
-            <a href="#" class="px-3 py-1 border border-gray-400 text-sm rounded-sm transition hover:bg-blue-500 hover:text-white">Otomotive</a>
-            <a href="#" class="px-3 py-1 border border-gray-400 text-sm rounded-sm transition hover:bg-blue-500 hover:text-white">Sport</a>
-            <a href="#" class="px-3 py-1 border border-gray-400 text-sm rounded-sm transition hover:bg-blue-500 hover:text-white">Agriculture</a>
+            <a href="#"
+              class="px-3 py-1 border border-gray-400 text-sm rounded-sm transition hover:bg-blue-500 hover:text-white">Economy</a>
+            <a href="#"
+              class="px-3 py-1 border border-gray-400 text-sm rounded-sm transition hover:bg-blue-500 hover:text-white">Otomotive</a>
+            <a href="#"
+              class="px-3 py-1 border border-gray-400 text-sm rounded-sm transition hover:bg-blue-500 hover:text-white">Sport</a>
+            <a href="#"
+              class="px-3 py-1 border border-gray-400 text-sm rounded-sm transition hover:bg-blue-500 hover:text-white">Agriculture</a>
           </div>
         </div>
         <!-- End Tags -->
@@ -557,9 +567,133 @@
   </div>
 
   <!-- Start Mobile Menu -->
-  <div class="fixed w-full h-full bg-black bg-opacity-25 left-0 top-0 transition-all duration-500 xl:hidden opacity-0 invisible" id="sidebar_wrapper">
+  <div class="fixed w-full h-full bg-black bg-opacity-25 left-0 top-0 transition-all duration-500 opacity-0 invisible" id="sidebar_wrapper">
     <div class="fixed top-0 w-72 h-full bg-white shadow-sm flex flex-col transition-all duration-500 -left-80" id="sidebar">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="lg:hidden">
+
+        <div class="relative mx-3 mt-3 shadow-sm">
+          <span class="absolute left-3 top-2.5 text-sm text-gray-600">
+            <i class="fas fa-search"></i>
+          </span>
+          <input type="text" placeholder="Search..."
+            class="block w-full rounded-3xl pl-11 pr-2 py-2 focus:outline-none bg-gray-200 text-sm text-gray-600 shadow-sm shadow-slate-300">
+        </div>
+
+        <h3 class="text-xl font-semibold text-gray-700 mb-1 font-roboto pl-3 pt-3">Menu</h3>
+
+        <div class="">
+          <a href="#" class="flex px-4 py-1 items-center font-semibold text-lg hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="fas fa-home"></i>
+            </span>
+            Home
+          </a>
+        </div>
+
+        <div class="">
+          <a href="#" class="flex px-4 py-1 items-center font-semibold text-lg hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="fas fa-file-alt"></i>
+            </span>
+            About
+          </a>
+        </div>
+
+        <div class="">
+          <a href="#" class="flex px-4 py-1 items-center font-semibold text-lg hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="fas fa-phone"></i>
+            </span>
+            Contact
+          </a>
+        </div>
+
+      </div>
+
+      <div class="bg-white shadow-sm shadow-white rounded-xl p-4">
+        <h3 class="text-xl font-semibold text-gray-700 font-roboto"> Categories </h3>
+        <div class="text-gray-700 space-y-2 mt-4">
+          <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span>Beauty</span>
+            <span class="font-normal ml-auto">(12)</span>
+          </a>
+
+          <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span>Business</span>
+            <span class="font-normal ml-auto">(5)</span>
+          </a>
+
+          <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span>Fashion</span>
+            <span class="font-normal ml-auto">(9)</span>
+          </a>
+
+          <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span>Food</span>
+            <span class="font-normal ml-auto">(8)</span>
+          </a>
+
+          <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span>Nature</span>
+            <span class="font-normal ml-auto">(3)</span>
+          </a>
+
+          <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span>Music</span>
+            <span class="font-normal ml-auto">(15)</span>
+          </a>
+
+          <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span>News</span>
+            <span class="font-normal ml-auto">(6)</span>
+          </a>
+
+          <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span>People</span>
+            <span class="font-normal ml-auto">(7)</span>
+          </a>
+
+          <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span>Sports</span>
+            <span class="font-normal ml-auto">(5)</span>
+          </a>
+
+          <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span>Technology</span>
+            <span class="font-normal ml-auto">(17)</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   <!--End Mobile Menu -->
