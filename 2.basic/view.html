@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Tailwind Project</title>
+  <link rel="stylesheet" href="./output/tailwind.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Roboto:wght@400;700;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="font-poppins text-gray-600">
+
+  <!-- Header Nav Bar Part -->
+  <nav class="bg-slate-300 shadow-sm shadow-slate-300">
+    <div class="container mx-auto px-4 py-3 flex items-center">
+      <a href="#">
+        <img src="./images/logo.png" alt="Company Logo" class="h-16">
+      </a>
+
+      <div class="ml-12 flex">
+        <a href="#" class="flex items-center font-semibold text-lg hover:text-blue-700 transition">
+          <span class="mr-2">
+            <i class="fas fa-home"></i>
+          </span>
+          Home
+        </a>
+      </div>
+
+      <div class="ml-12 flex">
+        <a href="#" class="flex items-center font-semibold text-lg hover:text-blue-700 transition">
+          <span class="mr-2">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          About
+        </a>
+      </div>
+
+      <div class="ml-12 flex">
+        <a href="#" class="flex items-center font-semibold text-lg hover:text-blue-700 transition">
+          <span class="mr-2">
+            <i class="fas fa-phone"></i>
+          </span>
+          Contact
+        </a>
+      </div>
+
+      <div class="relative ml-auto">
+        <span class="absolute left-3 top-2.5 text-sm text-gray-600">
+          <i class="fas fa-search"></i>
+        </span>
+        <input type="text" placeholder="Search..."
+          class="block w-full rounded-3xl pl-11 pr-2 py-2 focus:outline-none bg-gray-200 text-sm text-gray-600 shadow-sm shadow-slate-300">
+      </div>
+
+      <div class="ml-7">
+        <a href="#" class="flex items-center font-semibold text-md text-gray-900 hover:text-blue-700 transition">
+          <span class="mr-2">
+            <i class="far fa-user"></i>
+          </span>
+          Login/Register
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- End Header Nav Bar Part -->
+
+  <div class="py-12 bg-gray-200">
+    <div class="container mx-auto px-4 flex">
+
+      <div class="xl:w-9/12 lg:w-9/12 w-full xl:ml-6 lg:mr-6">
+        <div class="flex bg-white px-3 py-4 justify-between items-center rounded-md">
+          <h5 class="text-base uppercase font-semibold font-roboto">Business</h5>
+          <a href="#"
+            class="text-white py-1 px-3 bg-blue-500 rounded-xl uppercase text-sm border border-blue-500 hover:text-blue-500 hover:bg-transparent transition">
+            See More
+          </a>
+        </div>
+
+        <!-- Start Blog Post -->
+        <div class="rounded-sm overflow-hidden bg-white shadow-sm">
+          <a href="#" class="block rounded-md overflow-hidden">
+            <img src="./images/pic1.jpeg" alt=""
+              class="w-full h-60 object-cover transform hover:scale-110 transition duration-500">
+          </a>
+
+          <div class="p-4 pb-5 mt-7">
+            <a href="#">
+              <h2 class="block text-4xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">Some
+                Blog Post Title</h2>
+            </a>
+
+            <p class="text-gray-500 mt-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+
+            <p class="text-gray-500 bg-green-200 border border-green-600 mt-4 p-4">
+              <span class="mr-1 text-gray-400 text-xl">
+                <i class="fas fa-quote-left"></i>
+              </span>
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+              essentially unchanged.
+              <span class="ml-1 text-gray-400 text-xl">
+                <i class="fas fa-quote-right"></i>
+              </span>
+            </p>
+
+            <p class="text-gray-500 mt-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <p class="text-gray-500 mt-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of Letraset sheets co ntaining Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <div class="mt-3 flex space-x-4">
+              <div class="flex text-gray-400 text-sm items-center">
+                <span class="mr-2 text-xs">
+                  <i class="far fa-user"></i>
+                </span>
+                Blogging Tips
+              </div>
+
+              <div class="flex text-gray-400 text-sm items-center">
+                <span class="mr-2 text-xs">
+                  <i class="far fa-calendar"></i>
+                </span>
+                May 23, 2023
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Blog Post -->
+
+        <!-- Start Comments -->
+        <div class="mt-8 p-4 bg-white rounded-md shadow-sm">
+          <h4 class="text-base uppercase font-semibold font-roboto mb-4">Post A Comment</h4>
+
+          <p class="text-sm text-gray-400 mb-2">12 Comments</p>
+
+          <div class="space-y-5 ">
+            <div class="flex items-center border-b pb-5 border-gray-300">
+              <div class="w-12 h-12 flex-shrink-0">
+                <img src="./images/pic1.jpeg" class="w-full rounded-full">
+              </div>
+
+              <div class="flex-grow pl-4">
+                <h4 class="text-base font-roboto">Azzam J Ulhaq</h4>
+                <p class="text-sm text-gray-400">May 26, 2023 at 12:30</p>
+                <p class="text-sm font-600 mt-1">Some comment here, very nice post.</p>
+                <div class="flex gap-2 mt-2">
+                  <button
+                    class="text-gray-500 px-2 py-1 text-xs border border-gray-200 rounded-lg shadow-lg hover:bg-blue-500 hover:text-white">Reply</button>
+
+                  <button
+                    class="text-gray-500 px-2 py-1 text-xs border border-gray-200 rounded-lg shadow-lg hover:bg-red-500 hover:text-white">Delete</button>
+                </div>
+              </div>
+            </div> 
+
+            <div class="flex items-center border-b pb-5 border-gray-300">
+              <div class="w-12 h-12 flex-shrink-0">
+                <img src="./images/pic1.jpeg" class="w-full rounded-full">
+              </div>
+
+              <div class="flex-grow pl-4">
+                <h4 class="text-base font-roboto">Azzam J Ulhaq</h4>
+                <p class="text-sm text-gray-400">May 26, 2023 at 12:30</p>
+                <p class="text-sm font-600 mt-1">Some comment here, very nice post.</p>
+                <div class="flex gap-2 mt-2">
+                  <button
+                    class="text-gray-500 px-2 py-1 text-xs border border-gray-200 rounded-lg shadow-lg hover:bg-blue-500 hover:text-white">Reply</button>
+
+                  <button
+                    class="text-gray-500 px-2 py-1 text-xs border border-gray-200 rounded-lg shadow-lg hover:bg-red-500 hover:text-white">Delete</button>
+                </div>
+              </div>
+            </div> 
+
+            <div class="flex items-center border-b pb-5 border-gray-300">
+              <div class="w-12 h-12 flex-shrink-0">
+                <img src="./images/pic1.jpeg" class="w-full rounded-full">
+              </div>
+
+              <div class="flex-grow pl-4">
+                <h4 class="text-base font-roboto">Azzam J Ulhaq</h4>
+                <p class="text-sm text-gray-400">May 26, 2023 at 12:30</p>
+                <p class="text-sm font-600 mt-1">Some comment here, very nice post.</p>
+                <div class="flex gap-2 mt-2">
+                  <button
+                    class="text-gray-500 px-2 py-1 text-xs border border-gray-200 rounded-lg shadow-lg hover:bg-blue-500 hover:text-white">Reply</button>
+
+                  <button
+                    class="text-gray-500 px-2 py-1 text-xs border border-gray-200 rounded-lg shadow-lg hover:bg-red-500 hover:text-white">Delete</button>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <!-- End Comments -->
+      </div>
+
+      <div class="lg:w-3/12 w-full mt-8 lg:mt-0">
+        <!-- Start Social Plugin -->
+        <div class="w-full bg-white shadow-sm rounded-xl p-4">
+          <h3 class="text-xl font-semibold text-gray-700 font-roboto">Social Plugin</h3>
+
+          <div class="flex gap-2 mt-2">
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+              <i class="fab fa-pinterest"></i>
+            </a>
+
+            <a href="#"
+              class="w-8 h-8 rounded-sm flex items-center justify-center border border-gray-400 text-base text-gray-800">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <!-- End Social Plugin -->
+
+        <!-- Start Category sidebar -->
+        <div class="bg-white shadow-sm shadow-white rounded-xl p-4 mt-6">
+          <h3 class="text-xl font-semibold text-gray-700 font-roboto"> Categories </h3>
+          <div class="text-gray-700 space-y-2 mt-4">
+            <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="far fa-folder-open"></i>
+              </span>
+              <span>Beauty</span>
+              <span class="font-normal ml-auto">(12)</span>
+            </a>
+
+            <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="far fa-folder-open"></i>
+              </span>
+              <span>Business</span>
+              <span class="font-normal ml-auto">(5)</span>
+            </a>
+
+            <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="far fa-folder-open"></i>
+              </span>
+              <span>Fashion</span>
+              <span class="font-normal ml-auto">(9)</span>
+            </a>
+
+            <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="far fa-folder-open"></i>
+              </span>
+              <span>Food</span>
+              <span class="font-normal ml-auto">(8)</span>
+            </a>
+
+            <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="far fa-folder-open"></i>
+              </span>
+              <span>Nature</span>
+              <span class="font-normal ml-auto">(3)</span>
+            </a>
+
+            <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="far fa-folder-open"></i>
+              </span>
+              <span>Music</span>
+              <span class="font-normal ml-auto">(15)</span>
+            </a>
+
+            <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="far fa-folder-open"></i>
+              </span>
+              <span>News</span>
+              <span class="font-normal ml-auto">(6)</span>
+            </a>
+
+            <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="far fa-folder-open"></i>
+              </span>
+              <span>People</span>
+              <span class="font-normal ml-auto">(7)</span>
+            </a>
+
+            <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="far fa-folder-open"></i>
+              </span>
+              <span>Sports</span>
+              <span class="font-normal ml-auto">(5)</span>
+            </a>
+
+            <a href="#" class="flex items-center font-semibold leading-4 uppercase hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="far fa-folder-open"></i>
+              </span>
+              <span>Technology</span>
+              <span class="font-normal ml-auto">(17)</span>
+            </a>
+          </div>
+        </div>
+        <!-- End Category sidebar -->
+
+        <!-- Start Popular Posts -->
+        <div class="bg-white shadow-sm shadow-white rounded-xl p-4 mt-6">
+          <h3 class="text-xl font-semibold text-gray-700 font-roboto"> Popular Posts </h3>
+
+          <div class="mt-4">
+            <a href="#" class="flex group mt-4">
+              <div class="flex-shrink-0">
+                <img src="./images/pic1.jpeg" alt="Picture 1" class="h-14 w-20 rounded object-cover" />
+              </div>
+
+              <div class="flex-grow pl-3">
+                <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">How
+                  to make GOALS</h5>
+
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-1 text-xs">
+                    <i class="far fa-clock"></i>
+                  </span>
+                  May 29, 2023
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="flex group mt-4">
+              <div class="flex-shrink-0">
+                <img src="./images/pic1.jpeg" alt="Picture 1" class="h-14 w-20 rounded object-cover" />
+              </div>
+
+              <div class="flex-grow pl-3">
+                <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">How
+                  to make GOALS</h5>
+
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-1 text-xs">
+                    <i class="far fa-clock"></i>
+                  </span>
+                  May 29, 2023
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="flex group mt-4">
+              <div class="flex-shrink-0">
+                <img src="./images/pic1.jpeg" alt="Picture 1" class="h-14 w-20 rounded object-cover" />
+              </div>
+
+              <div class="flex-grow pl-3">
+                <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">How
+                  to make GOALS</h5>
+
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-1 text-xs">
+                    <i class="far fa-clock"></i>
+                  </span>
+                  May 29, 2023
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Popular Posts -->
+
+        <!-- Start Tags -->
+        <div class="w-full bg-white shadow-sm rounded-xl p-4 gap-2 mt-8">
+          <h3 class="text-xl font-semibold text-gray-700 font-roboto">Tags</h3>
+
+          <div class="flex items-center flex-wrap gap-2 mt-4">
+            <a href="#"
+              class="px-3 py-1 border border-gray-400 text-sm rounded-sm transition hover:bg-blue-500 hover:text-white">Economy</a>
+            <a href="#"
+              class="px-3 py-1 border border-gray-400 text-sm rounded-sm transition hover:bg-blue-500 hover:text-white">Otomotive</a>
+            <a href="#"
+              class="px-3 py-1 border border-gray-400 text-sm rounded-sm transition hover:bg-blue-500 hover:text-white">Sport</a>
+            <a href="#"
+              class="px-3 py-1 border border-gray-400 text-sm rounded-sm transition hover:bg-blue-500 hover:text-white">Agriculture</a>
+          </div>
+        </div>
+        <!-- End Tags -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="border-t py-4">
+    <p class="text-sm text-center">
+      Copyright &copy; 2023 <span class="font-semibold">Azzam Jiul</span> All Rights Reserved
+    </p>
+  </footer>
+</body>
+
+</html>
