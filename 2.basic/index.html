@@ -28,7 +28,7 @@
         <img src="./images/logo.png" alt="Company Logo" class="h-16">
       </a>
 
-      <div class="ml-12 flex">
+      <div class="ml-12 lg:flex space-x-5 hidden">
         <a href="#" class="flex items-center font-semibold text-lg hover:text-blue-700 transition">
           <span class="mr-2">
             <i class="fas fa-home"></i>
@@ -37,7 +37,7 @@
         </a>
       </div>
 
-      <div class="ml-12 flex">
+      <div class="ml-12 lg:flex space-x-5 hidden">
         <a href="#" class="flex items-center font-semibold text-lg hover:text-blue-700 transition">
           <span class="mr-2">
             <i class="fas fa-file-alt"></i>
@@ -46,7 +46,7 @@
         </a>
       </div>
 
-      <div class="ml-12 flex">
+      <div class="ml-12 lg:flex space-x-5 hidden">
         <a href="#" class="flex items-center font-semibold text-lg hover:text-blue-700 transition">
           <span class="mr-2">
             <i class="fas fa-phone"></i>
@@ -55,7 +55,7 @@
         </a>
       </div>
 
-      <div class="relative ml-auto">
+      <div class="relative ml-auto hidden lg:block">
         <span class="absolute left-3 top-2.5 text-sm text-gray-600">
           <i class="fas fa-search"></i>
         </span>
@@ -72,7 +72,7 @@
         </a>
       </div>
 
-      <div class="text-xl text-gray-700 cursor-pointer ml-4 xl:hidden block hover:text-blue-700 transition">
+      <div class="text-xl text-gray-700 cursor-pointer ml-4 lg:hidden block hover:text-blue-700 transition" id="open_sidebar">
         <i class="fas fa-bars"></i>
       </div>
     </div>
@@ -80,7 +80,7 @@
   <!-- End Header Nav Bar Part -->
 
   <div class="py-12 bg-gray-200">
-    <div class="container mx-auto px-4 flex-wrap lg:flex-nowrap">
+    <div class="container mx-auto px-4 flex flex-wrap lg:flex-nowrap">
       <div class="w-3/12 hidden xl:block">
 
         <!-- Start Category sidebar -->
@@ -556,11 +556,37 @@
     </div>
   </div>
 
+  <!-- Start Mobile Menu -->
+  <div class="fixed w-full h-full bg-black bg-opacity-25 left-0 top-0 transition-all duration-500 xl:hidden opacity-0 invisible" id="sidebar_wrapper">
+    <div class="fixed top-0 w-72 h-full bg-white shadow-sm flex flex-col transition-all duration-500 -left-80" id="sidebar">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <!--End Mobile Menu -->
+
   <footer class="border-t py-4">
     <p class="text-sm text-center">
       Copyright &copy; 2023 <span class="font-semibold">Azzam Jiul</span> All Rights Reserved
     </p>
   </footer>
+
+  <script>
+    document.querySelector('#open_sidebar').addEventListener('click', () => {
+      document.querySelector('#sidebar').classList.remove('-left-80');
+      document.querySelector('#sidebar').classList.add('left-0');
+      document.querySelector('#sidebar_wrapper').classList.remove('opacity-0');
+      document.querySelector('#sidebar_wrapper').classList.remove('invisible');
+    });
+
+    document.body.addEventListener('click', (e) => {
+      if (e.target.id === 'sidebar_wrapper') {
+        document.querySelector('#sidebar').classList.add('-left-80');
+        document.querySelector('#sidebar').classList.remove('left-0');
+        document.querySelector('#sidebar_wrapper').classList.add('opacity-0');
+        document.querySelector('#sidebar_wrapper').classList.add('invisible');
+      }
+    });
+  </script>
 </body>
 
 </html>
